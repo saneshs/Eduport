@@ -1,0 +1,124 @@
+.blogs{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 20rem;
+  @include respond(tab-land){
+    padding: 2rem 10rem;
+  }
+  @include respond(tab-port){
+    padding: 2rem 5rem;
+  }
+  @include respond(phone){
+    padding: 2rem;
+  }
+
+  &__item{
+      transition: all .5s;
+      border: 1px solid rgba($color-grey,0);
+      padding: .5rem;
+      height: 40rem;
+      width:70rem;
+      overflow: hidden;
+      position: relative;
+       &::-webkit-scrollbar{
+        width: .5rem;
+        position: absolute;
+      }
+      &::-webkit-scrollbar-track{
+        background: transparent;
+      }
+
+    &::-webkit-scrollbar-thumb{
+        background: $color-primary-blue;
+        border-radius: 1000px;
+      }
+    &:hover{
+      transform: scale(1.03);
+      border: 1px solid rgba($color-grey,.2);
+      box-shadow: 0 0 2rem rgba($color-grey,.2);
+    }
+     flex-grow: 1;
+     margin: 3rem;
+     width: 30rem;
+    &-title{
+      font-family: "Open Sans",sans-serif;
+      font-size: 2rem;
+      font-weight: bolder;
+      padding-bottom: 1rem;
+    }
+    &-info{
+      font-family: "Open Sans",sans-serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      padding-bottom: 1rem;
+      &-by{
+       color: $color-grey;
+      }
+      &-date{
+       color: $color-grey;
+      }
+    }
+    &-content{
+      color: $color-grey;
+      font-family: "Open Sans",sans-serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      padding-bottom: 1rem;
+    }
+    &-readMore{
+      position: absolute;
+      ont-family: "Open Sans",sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      bottom:0%;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      color: $color-primary-blue;
+      background:#f1f3de;
+      z-index: 1;
+      &:hover{
+        color: $color-Spring-green;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.blogs__item1{
+  margin-right: 5rem;
+  z-index: 1;
+}
+.pageWrapper{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem 0;
+   background:rgba($color-secondary-blue,.2);
+}
+.page__btn{
+   font-size: 2rem;
+   padding: 0 1rem;
+   margin:0 3rem;
+   border: none;
+   color: $color-black;
+   font-weight: 500;
+   cursor: pointer;
+}
+.page__num{
+  letter-spacing: 5px;
+  font-size: 2rem;
+}
+.image__blog{
+  height: 30rem;
+  width:100%;
+  object-fit: contain;
+  object-position: center;
+}
+.image__blog2{
+  height: 60vh;
+  width:100%;
+  object-fit: contain;
+  object-position: center;
+}

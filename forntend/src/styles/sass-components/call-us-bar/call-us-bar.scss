@@ -1,0 +1,67 @@
+.callUsBar{
+  padding-right: 2rem;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5rem;
+  color: $color-white;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background: rgba($color-secondary-blue,1);
+  @include respond(phone){
+    display:none;
+  }
+  & span{
+     padding-left: 1rem;
+     color: $color-white;
+     animation: call .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);}
+}
+.call{
+  color: $color-white;
+  font-size: 3rem;
+  padding:.5rem;
+  height: 5rem;
+  width: 5rem;
+  margin-right: 0rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  background: $color-Spring-green;
+  animation: vib 1s linear infinite;
+  backface-visibility: hidden;
+  @include respond(phone){
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+  }
+  &:hover{
+    color: $color-Spring-green;
+    background: $color-white;
+  }
+
+}
+@keyframes call {
+   from{
+     transform: translateX(200%);
+   }to{
+     transform: translateX(0%);
+   }
+}
+@keyframes vib {
+   0%{
+     transform: rotate(0deg);
+   }25%{
+     transform: rotate(20deg);
+   }50%{
+     transform: rotate(0deg);
+   }75%{
+     transform: rotate(-20deg);
+   }100%{
+     transform: rotate(0deg);
+   }
+
+}

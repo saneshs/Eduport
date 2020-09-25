@@ -1,0 +1,186 @@
+.footer{
+  background: $color-secondary-blue;
+  color: $color-white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 5rem;
+  min-height: 30vh;
+  justify-content: space-between;
+  z-index: -10;
+  & > *:not(.footer__socialmedia){
+    width:50rem;
+    & > *{
+      margin: 0 auto;
+      @include respond(tab-land){
+        margin: 0;
+      }
+      @include respond(tab-land){
+        width: auto;
+      }
+    }
+  }
+  &__copyright{
+     padding-bottom: 1rem;
+     letter-spacing: 1.5px;
+    &-h1{
+      font-family: "PT Sarif",serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      & span{
+         font-size: 2rem;
+      }
+    }
+    &-text{
+      font-family: "PT Sams",sans-serif;
+      font-size: 1.5rem;
+      line-height: 2;
+      margin-bottom: 1rem;
+    }
+    &-copyrightText{
+     font-size: 1.5rem;
+     color: $color-grey-dark-2;
+    }
+  }
+  &__nav{
+    font-family: "PT Sams",sans-serif;
+    padding-bottom: 2rem;
+     display: flex;
+    &-col{
+      padding: 1rem 0;
+      &-link{
+         font-size: 1.8rem;
+         padding: .5rem 3rem;
+         padding-left: 0;
+      }
+    }
+  }
+  &__socialMedia{
+    font-family: "PT Sams",sans-serif;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    @include respond(tab-land){
+      align-items:flex-start;
+    }
+    &-question{
+         display: flex;
+         flex-flow: column;
+         font-size: 1.8rem;
+      &-p1{
+        padding:  .5rem 0;
+        font-weight: lighter;
+
+      }
+      &-p2{
+        padding:  .5rem 0;
+        margin-bottom: 1rem;
+        font-weight: bug;
+      }
+    }
+    &-links{
+
+      &-head{
+          font-size: 2rem;
+          padding-bottom: .5rem;
+      }
+      &-row{
+
+        &-item{
+          font-size: 2.5rem;
+          padding-right: 3rem;
+        }
+
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@include respond(phone){
+  .footer{
+    padding: 2rem 2rem;
+}
+}
+.contact___strip{
+  color: $color-white;
+  background:$color-black;
+  display: flex;
+  padding: 2rem 5rem ;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  &-contact{
+    width: 25rem;
+    &-icon{
+        font-size: 3rem;
+    }
+    &-text{
+       font-family: "PT Sans", sans-serif;
+       font-size: 2rem;
+    }
+  }
+  &-email{
+    width: 25rem;
+    &-icon{
+        font-size: 3rem;
+    }
+    &-text{
+      font-family: "PT Sans", sans-serif;
+      font-size: 2rem;
+    }
+  }
+  &-address{
+    width: 25rem;
+    &-icon{
+       font-size: 3rem;
+    }
+    &-text{
+      font-family: "PT Sans", sans-serif;
+      font-size: 2rem;
+    }
+  }
+}
+@include respond(phone){
+  .contact___strip{
+    padding: 1rem ;
+    & > *{
+      margin: 1rem;
+    }
+    &-contact{
+      width: 20rem;
+      &-icon{
+          font-size: 2.5rem;
+      }
+      &-text{
+         font-family: "PT Sans", sans-serif;
+         font-size: 1.5rem;
+      }
+    }
+    &-email{
+      width: 20rem;
+      &-icon{
+          font-size: 2.5rem;
+      }
+      &-text{
+        font-family: "PT Sans", sans-serif;
+        font-size: 1.5rem;
+      }
+    }
+    &-address{
+      width: 20rem;
+      &-icon{
+         font-size: 2.5rem;
+      }
+      &-text{
+        font-family: "PT Sans", sans-serif;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

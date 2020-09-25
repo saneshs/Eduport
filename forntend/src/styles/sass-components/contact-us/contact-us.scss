@@ -1,0 +1,159 @@
+.contactUs{
+   opacity: 1;
+   background: rgba($color-grey,.1);
+   padding-bottom: 10rem;
+   &__form{
+     border: 1px solid rgba($color-black,.1);
+     box-shadow: 0 0 2rem rgba($color-black,.1);
+     border-radius: 20px;
+     width: 60rem;
+     margin: 5rem auto;
+     padding: 5rem 8rem;
+     &-h1{
+       text-transform: uppercase;
+       font-size: 2rem;
+       padding-bottom: .5rem;
+       letter-spacing: 1px;
+       font-family: "PT Sarif", serif;
+       &--mod{
+        padding-top: 2rem;
+        font-size: 3rem;
+        color: $color-orangered;
+       }
+     }
+     &-h2{
+       letter-spacing: 1px;
+       font-size: 1.5rem;
+       padding: 1rem 0;
+       margin: 1rem 0;
+       margin-bottom: 2rem;
+       color: $color-grey;
+       font-family: "PT Sans", sans-serif;
+     }
+     background: $color-white;
+     display: flex;
+     flex-flow: column;
+     justify-content: center;
+     &-input, #contactUs__category{
+        margin-bottom: 3rem;
+        // height: 2rem;
+        color: $color-grey;
+        font-family: "PT Sans", sans-serif;
+        padding: 1.5rem;
+        padding-left: 1rem;
+        font-size: 2rem;
+        border:  1px solid rgba($color-black,.2);
+        // width: 30%;
+        @include respond(tab-port){
+        }
+        @include respond(phone){
+        }
+
+        &:focus{
+          outline: none;
+          border: 1px solid rgba($color-black,1);
+        }
+     }
+     & label{
+       font-size: 2rem;
+       font-weight: 600;
+       font-family: "PT Sans", sans-serif;
+       padding-bottom: .5rem;
+       color: $color-grey;
+     }
+     &-submit{
+       color:$color-white;
+       text-transform: uppercase;
+       font-size: 2rem;
+       border: none;
+       margin: 2rem auto;
+       padding: 1rem 2rem;
+       transition: all .5s;
+       display: inline-block;
+       width: 60%;
+       background: rgba($color-orangered,.8);
+       cursor: pointer;
+       &:hover{
+         background:  $color-orangered;
+         box-shadow: 0rem 0rem 1rem rgba($color-black,.5);
+       }
+     }
+     &-terms{
+       color:$color-grey;
+       font-size: 1.3rem;
+       padding-bottom: 3rem;
+       font-weight: 500;
+       line-height: 2;
+       & span{
+         color: $color-orangered;
+       }
+     }
+   }
+   &__benefits{
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+     &-item{
+         display: flex;
+         align-items: center;
+         &-icon{
+           font-size: 2.5rem;
+           color: $color-orangered;
+           padding-right: .5rem;
+         }
+         &-text{
+           font-size: 1.5rem;
+           font-family: "PT Sans",sans-serif;
+           color: $color-grey;
+         }
+     }
+
+   }
+}
+@include respond(tab-land){
+  .contactUs{
+     &__benefits{
+       padding: 2rem 0rem;
+       flex-wrap: wrap;
+       &-item{
+         flex-basis: 30%;
+           &-icon{
+             font-size: 2.5rem;
+             color: $color-orangered;
+           }
+           &-text{
+             font-size: 1.5rem;
+           }
+       }
+
+     }
+  }
+}
+@include respond(phone){
+  .contactUs{
+    &__h1{
+      font-size: 2.3rem;
+    }
+    &__h2{
+      font-size: 2rem;
+    }
+    &__form{
+      width: 95%;
+    }
+     &__benefits{
+       flex-wrap: wrap;
+       &-item{
+         flex-basis: 30%;
+           &-icon{
+             font-size: 2rem;
+             color: $color-orangered;
+           }
+           &-text{
+             font-size: 1rem;
+           }
+       }
+
+     }
+  }
+
+}

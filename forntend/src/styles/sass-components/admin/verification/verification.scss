@@ -1,0 +1,36 @@
+.adminVerificationWrapper{
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adminVerification__form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  & div{
+    margin-bottom: 2rem;
+  }
+  &-label{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  &-input{
+    height: 3.5rem;
+    width: 55rem;
+     border: none;
+     border-bottom: 3px solid $color-black;
+     font-size: 1.5rem;
+     font-weight: bolder;
+     padding-left: 1rem;
+     background: rgba($color-grey,.01);
+     &:focus{
+       outline: none;
+       border-bottom: 3px solid $color-primary-blue;
+     }
+
+  }
+}

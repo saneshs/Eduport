@@ -1,0 +1,242 @@
+.file{
+   color: $color-secondary-red;
+}
+.trophy{
+   color: $color-secondary-warning;
+}
+.folder{
+   color: $color-primary-blue;
+}
+.life-ring{
+   color: $color-Spring-green;
+}
+.download{
+   color: $color-purple;
+}
+.pause{
+   color: $color-pink;
+}
+
+.landingScreen8{
+  padding-bottom:5rem;
+  margin: 0 10rem;
+  &__appLink{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: rgba($color-grey,.2);
+      height: 35vh;
+      margin-top: 30vh;
+      &-box{
+         &-head{
+           font-size: 4rem;
+           font-weight: bold;
+           margin-left: 2rem;
+           margin-bottom: 5rem;
+           font-family: "PT sarif",serif;
+         }
+         &-btns{
+           font-size: 2rem;
+           margin-left: 2rem;
+           display: flex;
+           font-family: "PT sarif",serif;
+           cursor: pointer;
+           &-apple{
+             background: $color-black;
+             color:$color-white;
+             padding: 1rem 2rem;
+             margin: 1rem;
+           }
+           &-google{
+             background: $color-black;
+             color:$color-white;
+             margin: 1rem;
+             padding: 1rem 2rem;
+           }
+         }
+      }
+      &-mobile{
+        align-self: flex-end;
+        height: 60vh;
+        position: relative;
+        margin-right: 5rem;
+        & img{
+           height: 100%;
+        }
+      }
+  }
+  &__features{
+    padding: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 1;
+    &-items{
+       text-align: center;
+       padding: 3rem 2rem;
+       flex-basis: 33.3%;
+       display: flex;
+       &-iconWrapper{
+         font-size: 3rem;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         & i{
+           padding: 1rem 1.5rem;
+         }
+       }
+       &-item{
+           &-head{
+             font-size: 2.1rem;
+             font-weight: 800;
+             padding-bottom: .5rem;
+             font-family: "PT Sarif",serif;
+           }
+           &-detail{
+             font-size: 1.8rem;
+             font-weight: 400;
+             color: $color-grey;
+             font-family: "PT Sans",serif;
+           }
+       }
+    }
+  }
+}
+@include respond(tab-land){
+  .landingScreen8{
+    margin: 0 0rem;
+    &__appLink{
+        height: 20vh;
+        margin-top: 10vh;
+        &-box{
+           &-head{
+             font-size: 3rem;
+             margin-left: 1rem;
+             margin-bottom: 2rem;
+
+           }
+           &-btns{
+             margin-left: 1rem;
+             font-size: 1.5rem;
+             &-apple{
+               background: $color-black;
+               color:$color-white;
+               padding: 1rem 2rem;
+               margin: 1rem;
+             }
+             &-google{
+               background: $color-black;
+               color:$color-white;
+               margin: 1rem;
+               padding: 1rem 2rem;
+             }
+           }
+        }
+        &-mobile{
+          height: 30vh;
+        }
+    }
+    &__features{
+      padding: 0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      opacity: .6;
+      &-items{
+         padding: 2rem 1rem;
+         &-iconWrapper{
+           font-size: 2.5rem;
+           & i{
+             padding: .5rem 1.2rem;
+           }
+         }
+         &-item{
+             &-head{
+               font-size: 2rem;
+             }
+             &-detail{
+               font-size: 1.5rem;
+               font-weight: 400;
+             }
+         }
+      }
+    }
+  }
+}
+
+@include respond(tab-port){
+  .landingScreen8{
+    &__appLink{
+        flex-flow: column;
+        height: auto;
+        justify-content: center;
+        &-box{
+           &-head{
+             font-size: 2rem;
+             padding: 1rem 0;
+             margin: 0;
+             padding-top: 3rem;
+           }
+           &-btns{
+             margin-left: 0rem;
+             font-size: 1.5rem;
+             justify-content: center;
+             &-apple{
+               background: $color-black;
+               color:$color-white;
+               padding: 1rem 1.5rem;
+               margin: 1rem;
+             }
+             &-google{
+               background: $color-black;
+               color:$color-white;
+               margin: 1rem;
+               padding: 1rem 1.5rem;
+             }
+           }
+        }
+        &-mobile{
+          padding: 2rem 0;
+          margin:  2rem 0;
+          align-self: center;
+          height: 20vh;
+        }
+    }
+    &__features{
+      padding: 5rem 0rem;
+      display: flex;
+      flex-flow: column;
+      opacity: .6;
+      &-items{
+        text-align: left;
+        width: 70%;
+        padding-bottom: 1rem;
+         &-item{
+             padding-left: 1rem;
+             &-head{
+               font-size: 2rem;
+             }
+             &-detail{
+               font-size: 1.5em;
+               font-weight: 500;
+             }
+         }
+      }
+    }
+  }
+}
+
+@include respond(phone){
+  .landingScreen8{
+    margin-bottom: 0rem;
+    &__features{
+      padding: .5rem;
+      &-items{
+        width: 98%;
+      }
+    }
+  }
+}

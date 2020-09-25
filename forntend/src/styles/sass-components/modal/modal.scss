@@ -1,0 +1,36 @@
+.modal{
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+  background: $color-white;
+  color: $color-white;
+  width:100vw;
+  height:100vh;
+  z-index: 500;
+  top:0%;
+  left:0%;
+  font-size: 3rem;
+  animation: modal .2s linear;
+  overflow: hidden;
+  transform-origin: 100% 0;
+}
+@keyframes modal {
+    0%{
+      width:0%;
+      height:0%;
+    }
+    50%{
+      width:50vw;
+      height:50vw;
+    }
+    100%{
+      width:100vw;
+      height:100vw;
+    }
+}

@@ -1,0 +1,54 @@
+// abstracts
+@import "styles/abstracts/mixins";
+@import "styles/abstracts/variables";
+
+// base
+@import "styles/base/base";
+
+// sass-components
+
+//landing
+@import "styles/sass-components/card/card";
+@import "styles/sass-components/btn/btn";
+@import "styles/sass-components/landing/landing-screen-1/landing-screen-1";
+@import "styles/sass-components/landing/landing-screen-2/landing-screen-2";
+@import "styles/sass-components/landing/landing-screen-3/landing-screen-3";
+@import "styles/sass-components/landing/landing-screen-4/landing-screen-4";
+@import "styles/sass-components/landing/landing-screen-5/landing-screen-5";
+@import "styles/sass-components/landing/landing-screen-6/landing-screen-6";
+@import "styles/sass-components/landing/landing-screen-7/landing-screen-7";
+@import "styles/sass-components/landing/landing-screen-8/landing-screen-8";
+@import "styles/sass-components/landing/landing-screen-9/landing-screen-9";
+@import "styles/sass-components/landing/landing-screen-10/landing-screen-10";
+@import "styles/sass-components/landing/landing";
+
+//pricing
+@import "styles/sass-components/pricing/faq/faq";
+@import "styles/sass-components/pricing/price/price";
+
+//Fixed
+@import "styles/sass-components/fixed/call-us-on/call-us-on";
+@import "styles/sass-components/fixed/mobile-menu/mobile-menu";
+@import "styles/sass-components/fixed/goToTop/goToTop";
+@import "styles/sass-components/fixed/whatsapp/whatsapp";
+
+//blogs
+@import "styles/sass-components/blogs/blogs";
+@import "styles/sass-components/post/post";
+
+// Admin
+@import "styles/sass-components/admin/student-list/student-list";
+@import "styles/sass-components/admin/pricing/faq/faq";
+@import "styles/sass-components/admin/verification/verification";
+
+
+@import "styles/sass-components/about-us/about-us";
+@import "styles/sass-components/contact-us/contact-us";
+@import "styles/sass-components/navigation/navigation";
+@import "styles/sass-components/call-us-bar/call-us-bar";
+@import "styles/sass-components/logo/logo";
+@import "styles/sass-components/modal/modal";
+@import "styles/sass-components/modal-navigation/modal-navigation";
+@import "styles/sass-components/footer/footer";
+@import "styles/sass-components/spinner/spinner";
+@import "styles/sass-components/loader/loader";

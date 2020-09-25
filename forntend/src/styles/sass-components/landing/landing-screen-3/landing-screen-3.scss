@@ -1,0 +1,34 @@
+.landingScreen3{
+  padding: 5rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba($color-grey,.05);
+  padding-top: 1rem;
+  &__head{
+    background: rgba($color-grey,.05);
+    text-transform: capitalize;
+    padding: 2rem 16rem;
+    font-weight:bold;
+    font-size: 3rem;
+    font-family: "PT Serif", serif;
+
+    @include respond(tab-land){
+      padding: 2rem 10rem;
+    }
+    @include respond(tab-land){
+      padding: 2rem 0rem;
+      text-align: center;
+    }
+  }
+}
+@include respond(phone){
+  .landingScreen3{
+    &__head{
+      padding: 2rem;
+      font-weight:500;
+      text-align: center;
+      font-size: 3rem;
+      font-family: "PT Sans", sans-serif;
+    }
+  }
+}
